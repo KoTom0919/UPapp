@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#347fc1">
+
+  <title>UP記録表</title>
+
+  <!-- アプリアイコン -->
+  <link rel="icon"
+        type="image/png"
+        href="./icon.png">
+
+  <link rel="apple-touch-icon"
+        href="./icon.png">
+
+  <!-- ホーム画面追加用 -->
+  <link rel="manifest"
+        href="./manifest.webmanifest">
+
+  <meta name="apple-mobile-web-app-capable"
+        content="yes">
+
+  <meta name="apple-mobile-web-app-title"
+        content="UP記録表">
+
+  <meta name="apple-mobile-web-app-status-bar-style"
+        content="default">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header>
+      <div>
+        <h1>UP記録表</h1>
+        <div class="muted">
+          感情の変化を記録・振り返る
+        </div>
+      </div>
+
+      <button class="btn"
+              onclick="showPage('settings')">
+        ⚙ 設定
+      </button>
+    </header>
+
+    <!-- 各ページを表示 -->
+    <div id="page"></div>
+
+  </main>
+
+  <!-- 下部ナビゲーション -->
+  <nav class="bottom">
+
+    <button data-page="home"
+            onclick="showPage('home')">
+      ⌂<br>ホーム
+    </button>
+
+    <button data-page="records"
+            onclick="showPage('records')">
+      ▤<br>記録一覧
+    </button>
+
+    <button data-page="graph"
+            onclick="showPage('graph')">
+      ⌁<br>グラフ
+    </button>
+
+  </nav>
+
+  <!-- ダイアログ -->
+  <dialog id="modal">
+    <div id="modalBody"></div>
+  </dialog>
+
+  <!-- 通知 -->
+  <div id="notice" role="status"></div>
+
+  <!-- JavaScript -->
+  <script src="./script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+{
+  "name": "UP記録表",
+  "short_name": "UP記録表",
+  "description": "感情の変化を記録・振り返るアプリ",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#347fc1",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
