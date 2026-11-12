@@ -1442,6 +1442,12 @@ function drawGraph() {
 function settings() {
   root.innerHTML = `
     <h2>設定</h2>
+        <div class="card">
+      <button type="button" class="btn wide"
+        onclick="window.location.assign('https://kotom0919.github.io/App-menu/')">
+        ほかのアプリを探す
+      </button>
+    </div>
 
     <div class="card">
       <h3>データのバックアップ</h3>
